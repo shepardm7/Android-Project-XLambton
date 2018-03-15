@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.example.phoenix.xlambton.AddAgent">
+
+    <!--name-->
+    <!--label-->
+    <!--agency-->
+    <!--website-->
+    <!--country-->
+    <!--phone number-->
+    <!--address-->
+
+
+    <TextView
+        android:id="@+id/textViewAgentAddTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="Add Agent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewAgentAddTitle">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewAddAgent"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewAddAgent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter agent's name..."
+                android:inputType="textCapWords|textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's level..."
+                android:inputType="textCapSentences|textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextAgency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextLevel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's agency..."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextAgency"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's website..."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextWebsite"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's country..."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCountry"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's phone..."
+                android:inputType="phone"
+                android:maxLength="14" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Enter agent's address..."
+                android:inputType="text" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

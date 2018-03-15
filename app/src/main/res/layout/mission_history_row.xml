@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp"
+    android:paddingTop="10dp" android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/missionHistoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission name: Blah Blah Blah"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/missionHistoryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: dd/mm/yyyy"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/missionHistoryName"
+        />
+
+    <TextView
+        android:id="@+id/missionHistoryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/missionHistoryName"
+        android:layout_toRightOf="@+id/missionHistoryDate"
+        android:text="Status: On going"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

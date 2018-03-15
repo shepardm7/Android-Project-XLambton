@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="example.phoenix.xlambton.AddAgent">
+
+    <item android:id="@+id/menu_addagent_save"
+        android:title="Save"
+        app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/menu_addagent_reset"
+        android:title="Reset fields"
+        app:showAsAction="never">
+    </item>
+
+    <item android:id="@+id/menu_addagent_logout"
+        android:title="Log out"
+        app:showAsAction="never">
+    </item>
+
+</menu>

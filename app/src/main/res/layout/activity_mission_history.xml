@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phoenix.xlambton.MissionHistory"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textViewTitleMissionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="Mission History"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/listViewMissionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewTitleMissionHistory"></ListView>
+
+    <TextView
+        android:id="@+id/nothingToDispMessage_MH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitleMissionHistory"
+        android:layout_marginTop="60dp"
+        android:text="Nothing to display"
+        android:textAlignment="center"
+        android:textSize="17sp"/>
+
+</RelativeLayout>
